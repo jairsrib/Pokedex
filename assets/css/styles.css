@@ -10,6 +10,21 @@
     height: 100%;
 
 }
+.proximo{
+    display: flex;
+    justify-content: end;
+    margin-top: 4.7%;
+    margin-right: 10%;
+   margin-left: 0;
+}
+.anterior{
+    display: flex;
+    justify-content: start;
+    margin-top: -5.5%;
+    margin-bottom: 5%;
+   margin-left: 10%;
+}
+
 
 body {
     background-image: url(../img/fundo.jpg);
@@ -25,27 +40,38 @@ body {
 }
 
 .header {
-    background-color: red;
-    padding: 50px;
+    background-image: url(../img/7901954.jpg);
+    background-position: 20%;
+    background-size: 100%;
+    padding: 0px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    font-size: 2em;
+    font-size: 0.5em;
 }
 
+
+.imagemAsh{
+    position: absolute;
+    width: 200px;
+    padding: 10px;
+    margin: -150px;
+    margin-left: 150px;
+    }
+
+.imagemRocket{
+    position: absolute;
+    width: 100%;
+    padding: 10px;
+    margin: -150px;
+    text-align: right;
+}
 .pokedex {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding: 20px;
 }
-
-.principal h5{
-    font-size: 15px;
-    font-style: italic;
-    color: black;
-}
-
 .imagem{
     position: absolute;
     width: 600px;
@@ -60,6 +86,7 @@ body {
     margin: -150px;
     text-align: right;
 }
+
 
 .pokemon-card {
     display: flex;
@@ -77,7 +104,7 @@ body {
 .pokemon-card:hover {
     border-style: solid;
     border-color: red;
-    transform: translateY(-10);
+    transform: translate3d(-10);
     cursor: pointer;
     font-weight: bold;
     transition: 1ms;
@@ -102,7 +129,7 @@ body {
 .planta-main {
     padding: 5px;
     align-self: start;
-    background-color: rgba(0, 128, 0, 0.838);
+    background-color: #9bcc50;
     color: black;
     border-radius: 20px;
     font-size: 0.6em;
@@ -112,7 +139,7 @@ body {
 .poison-main {
     padding: 5px;
     align-self: start;
-    background-color: rgba(128, 0, 128, 0.83);
+    background-color: #b97fc9;
     color: black;
     border-radius: 20px;
     font-size: 0.6em;
@@ -122,7 +149,7 @@ body {
 .fogo-main {
     padding: 5px;
     align-self: start;
-    background-color: orangered;
+    background-color: #fd7d24;
     color: black;
     border-radius: 20px;
     font-size: 0.6em;
@@ -132,7 +159,7 @@ body {
 .flying-main {
     padding: 5px;
     align-self: start;
-    background-color: rgba(128, 128, 128, 0.844);
+    background: linear-gradient(to bottom, #8bc1f0 50%, #bfbfbf 50%) ;
     color: black;
     border-radius: 20px;
     font-size: 0.6em;
@@ -142,7 +169,7 @@ body {
 .agua-main {
     padding: 5px;
     align-self: start;
-    background-color: rgba(0, 153, 255, 0.774);
+    background-color: #4592c4;
     color: black;
     border-radius: 20px;
     font-size: 0.6em;
@@ -173,7 +200,7 @@ body {
 .psiquico-main {
     padding: 5px;
     align-self: start;
-    background-color: palevioletred;
+    background-color: #f366b9;
     color: black;
     border-radius: 20px;
     font-size: 0.6em;
@@ -183,7 +210,7 @@ body {
 .ground-main {
     padding: 5px;
     align-self: start;
-    background-color: rgba(255, 255, 0, 0.496);
+    background: linear-gradient(to bottom, #f7de3f 50%, #ab9842 50%);
     color: black;
     border-radius: 20px;
     font-size: 0.6em;
@@ -193,7 +220,7 @@ body {
 .rock-main {
     padding: 5px;
     align-self: start;
-    background-color: rgba(93, 93, 10, 0.833);
+    background-color: #a38c21;
     color: black;
     border-radius: 20px;
     font-size: 0.6em;
@@ -203,7 +230,7 @@ body {
 .dragao-main {
     padding: 5px;
     align-self: start;
-    background-color: rgba(87,14,14);
+    background: linear-gradient(to bottom,#53a4cf 50%, #f16e57 50%);
     color: black;
     border-radius: 20px;
     font-size: 0.6em;
@@ -213,7 +240,7 @@ body {
 .ghost-main {
     padding: 5px;
     align-self: start;
-    background-color: violet;
+    background-color: #7b62a3;
     color: black;
     border-radius: 20px;
     font-size: 0.6em;
@@ -223,7 +250,7 @@ body {
 .normal-main {
     padding: 5px;
     align-self: start;
-    background-color: black;
+    background-color: #a4acaf;
     color: white;
     border-radius: 20px;
     font-size: 0.6em;
@@ -235,45 +262,66 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 20px;
+    margin-top: -10%;
 }
 .fire {
-    background-color: orangered;
+    background-image: url(../img/capa-fogo.png);
+    background-position: 30%;
+    background-size: 100%;
 }
 
 .grass {
-    background-color: green;
+    background-image: url(../img/capa-planta.png);
+    background-position: 30%;
+    background-size: 100%;
 }
 
 .water {
-    background-color: rgb(16, 116, 255);
+    background-image: url(../img/capa-agua.png);
+    background-position: 30%;
+    background-size: 100%;
 
 }
 
 .eletric {
-    background-color: yellow;
+    background-image: url(../img/pokemon-tipo-eletrico.png);
+    background-position: 30%;
+    background-size: 100%;
 }
 
 .dragon{
-    background-color: rgb(87, 15, 14);
+    background-image: url(../img/capa-dragão.png);
+    background-position: 30%;
+    background-size: 100%;
 
 }
 .rock{
-    background-color: #312201;   
+    background-image: url(../img/capa-pedra.png);
+    background-position: 30%;
+    background-size: 100%;
 }
 .ghost{
-    background-color: violet;  
+    background-image: url(../img/capa-fantasma.png);
+    background-position: 30%;
+    background-size: 100%;
 }
 .Normal{
-    background-color: gray;
+    background-image: url(../img/capa-normal.png);
+    background-position: 30%;
+    background-size: 100%;
 }
 .psiquic{
-    background-color: palevioletred
+    background-image: url(../img/capa-psíquico.png);
+    background-position: 30%;
+    background-size: 100%;
 }
 
 
 .pokemon-detail img {
     width: 200px;
     height: 200px;
+    padding: 2em;
+    margin-top:10%;
 }
 .organizar {
     display: flex;
@@ -327,17 +375,21 @@ body {
     align-items: center;
 
 }
+.separar-ryhornfdp{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 
 .fraqueza h2 {
     display: flex;
     flex-direction: row;
 }
 .agua {
-
-    margin: 0 auto;
     font-weight: bold;
-
-    background-color: #023691;
+display: flex;
+flex-direction: column;
+    background-color: #4592c4;
     border-radius: 20px;
     padding: 10px;
     color: white;
@@ -347,7 +399,7 @@ body {
 
     margin: 0 auto;
 
-    background-color: #7c5e03ca;
+    background: linear-gradient(to bottom, #f7de3f 50%, #ab9842 50%) ;
     border-radius: 20px;
     padding: 10px;
     color: white;
@@ -358,7 +410,7 @@ body {
     margin: 0 auto;
     font-weight: bold;
 
-    background-color: #312201;
+    background-color: #a38c21;
     border-radius: 20px;
     padding: 10px;
     color: white;
@@ -417,7 +469,7 @@ body {
     margin: 0 auto;
     font-weight: bold;
     flex-direction: column;
-    background-color: rgb(108,22,21,0.918);
+    background: linear-gradient(to bottom,#53a4cf 50%, #f16e57 50%);
     border-radius: 20px;
     padding: 10px;
     color: white;  
@@ -427,7 +479,7 @@ body {
     margin: 0 auto;
     font-weight: bold;
     flex-direction: column;
-    background-color: blueviolet;
+    background-color: #7b62a3;
     border-radius: 20px;
     padding: 10px;
     color: white; 
@@ -437,7 +489,7 @@ body {
     margin: 0 auto;
     font-weight: bold;
     flex-direction: column;
-    background-color: rgb(239, 174, 174);
+    background-color: #a4acaf;
     border-radius: 20px;
     padding: 10px;
     color: white; 
@@ -457,7 +509,7 @@ body {
     margin: 0 auto;
     font-weight: bold;
     flex-direction: column;
-    background-color: #00980a;
+    background-color: #9bcc50;
     border-radius: 20px;
     padding: 10px;
     color: white;   
@@ -477,7 +529,7 @@ body {
     margin: 0 auto;
     font-weight: bold;
     flex-direction: column;
-    background-color: rgb(116, 83, 83);
+    background-color: #f366b9;
     border-radius: 20px;
     padding: 10px;
     color: white;   
@@ -498,7 +550,7 @@ body {
     margin: 0 auto;
     font-weight: bold;
     flex-direction: column;
-    background-color: #cd0808;
+    background-color: #fd7d24;
     border-radius: 20px;
     padding: 10px;
     color: white;
@@ -508,7 +560,7 @@ body {
     margin: 0 auto;
     font-weight: bold;
     flex-direction: column;
-    background-color: #58b0c8;
+    background: linear-gradient(to bottom, #8bc1f0 50%, #bfbfbf 50%);
     border-radius: 20px;
     padding: 10px;
     color: white;
@@ -518,7 +570,7 @@ body {
     margin: 0 auto;
     font-weight: bold;
     flex-direction: column;
-    background-color: #3d0529;
+    background-color: #b97fc9;
     border-radius: 20px;
     padding: 10px;
     color: white; 
@@ -533,6 +585,7 @@ body {
 .pokemon-info h2 {
     font-size: 2em;
     margin-bottom: 10px;
+    color: black;
 }
 
 .pokemon-info p {
@@ -547,7 +600,7 @@ body {
     display: block;
     margin: 20px auto;
     padding: 30px 20px;
-    background-color: red;
+    background-image: url(../img/7901954.jpg);
     color: white;
     text-align: center;
     text-decoration: none;
@@ -558,8 +611,8 @@ body {
 }
 
 .back-button:hover {
-    text-decoration: underline;
-    color: blue;
+    text-decoration: none;
+    color: yellow;
 }
 
 @media (max-width: 600px) {
@@ -569,7 +622,9 @@ body {
     }
 }
 .evolucao {
-    background-color: rgb(37, 37, 37);
+    background-image: url('../img/fundo-de-estilo-comico-em-design-plano_52683-53321.jpg');
+    background-size: 100%;
+    background-position: 30%;
     color: wheat;
     padding: 2em;
     display: flex;
@@ -578,7 +633,6 @@ body {
     align-items: center;
     border-radius: 30px;
     margin: 30px 0;
-
 }
 
 .indicador {
@@ -586,9 +640,12 @@ body {
 }
 
 footer{
-    background-color: red;
+    background-image: url(../img/7901954.jpg);
     padding: 20px;
     text-align: center;
     font-weight: bold;
     font-size: 0.7em;
+}
+.rodape{
+    background-image: url(../img/7901954.jpg);
 }
